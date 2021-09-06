@@ -4,21 +4,16 @@ import './styles.css';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <div className="bg-gray-50">
       <Head>
-        <title>Welcome to site!</title>
+        <title>0xDEADBEEF</title>
       </Head>
       <div className="app">
-        <header className="flex">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/nx-logo-white.svg" alt="Nx logo" width="75" height="50" />
-          <h1>Welcome to site!</h1>
-        </header>
         <main>
           <Component {...pageProps} />
         </main>
       </div>
-    </>
+    </div>
   );
 }
 
